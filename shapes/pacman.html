@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man</title>
+    <link rel="stylesheet" href="../css/pacman.css">
+</head>
+<body>
+    <h1>PacMan</h1>
+    <div id="pacman"></div>
+    <button onclick="ShowCode()">Show Code</button>
+    <p id="code"></p>
+    <blockquote>~ Made By Code With Anas</blockquote>
+</body>
+<script>
+    let ShowCode = () => {
+        let Code = document.getElementById("code");
+        Code.innerText = `#pacman{
+    width: 0;
+    height: 0;
+    border-right: 150px solid transparent;
+    border-top: 150px solid red;
+    border-left: 150px solid red;
+    border-bottom: 150px solid red;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+}`
+        Code.style.border = "4px solid grey";
+        Code.style.padding = "15px";
+    }
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite</title>
+    <link rel="stylesheet" href="../css/infinite.css">
+</head>
+<body>
+    <h1>Infinite</h1>
+    <div id="infinite"></div>
+    <button onclick="ShowCode()">Show Code</button>
+    <p id="code"></p>
+    <blockquote>~ Made By Code With Anas</blockquote>
+</body>
+<script>
+    let ShowCode = () => {
+        let Code = document.getElementById("code");
+        Code.innerText = `#infinite{
+    position: relative;
+    width: 212px;
+    height: 100px;
+    box-sizing: content-box;
+}
+
+#infinite::before,
+#infinite::after{
+    content: '';
+    box-sizing: content-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 20px solid red;
+    border-radius: 50px 50px 0 50px;
+    transform: rotate(-45deg);
+}
+
+#infinite::after{
+    left: auto;
+    right: 0;
+    border-radius: 50px 50px 50px 0;
+    transform: rotate(45deg);
+}`
+        Code.style.border = "4px solid grey";
+        Code.style.padding = "15px";
+    }
+</script>
+</html>

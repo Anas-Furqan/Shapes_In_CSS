@@ -1,0 +1,43 @@
+#oval{
+    width: 400px;
+    height: 200px;
+    border-radius: 200px / 100px;
+    background: red;
+}
+
+h1{
+    font-size: 75px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+button{
+    position: absolute;
+    right: 23%;
+    top: 160px;
+    background: transparent;
+    border: 3px solid grey;
+    border-radius: 30%;
+    color: grey;
+
+}
+
+p{
+    position: absolute;
+    right: 19%;
+    top: 200px;
+}
+
+blockquote{
+    position: fixed;
+    inset: 85% 0 0 75%;
+    color: coral;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
